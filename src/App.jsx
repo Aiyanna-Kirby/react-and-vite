@@ -4,6 +4,7 @@ import Home from "./components/pages/Home.jsx";
 import About from "./components/pages/About.jsx";
 import Contact from "./components/pages/Contact.jsx";
 import Nav from "./components/Nav.jsx";
+import Users from "./components/pages/Users.jsx";
 
 function App() {
   return (
@@ -12,8 +13,7 @@ function App() {
         <Nav></Nav>
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/users/:username" element={<Users />}></Route>
         </Routes>
       </Router>
     </div>
